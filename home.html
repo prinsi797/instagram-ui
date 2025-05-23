@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../dist/output.css" rel="stylesheet">
+    <style>
+        .story-gradient {
+            background: linear-gradient(45deg, #FCAF45, #E1306C, #5851DB);
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Mobile Header -->
+    <header class="flex justify-between items-center px-4 py-2 border-b border-gray-800">
+        <div class="flex items-center">
+            <div class="text-2xl font-semibold">Instagram</div>
+            <i class="fas fa-chevron-down ml-2 text-sm"></i>
+        </div>
+        <div class="flex items-center space-x-6">
+            <div class="relative">
+                <a href="notification.html">
+                    <i class="far fa-heart text-2xl"></i>
+                </a>
+            </div>
+            <div class="relative">
+                <i class="far fa-comment text-2xl"></i>
+                <span
+                    class="notification-badge bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">11</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stories Section -->
+    <div class="px-2 py-4">
+        <div class="flex space-x-4 overflow-x-auto">
+            <!-- Your Story -->
+            <div class="flex flex-col items-center">
+                <div class="relative">
+                    <div class="w-16 h-16 rounded-full bg-gray-700 overflow-hidden">
+                        <img src="img/hardwear.jpg" alt="Your Story" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="absolute bottom-0 right-0 bg-blue-500 rounded-full w-6 h-6 border-2 border-black flex items-center justify-center">
+                        <i class="fas fa-plus text-xs"></i>
+                    </div>
+                </div>
+                <p class="text-xs mt-1">Your story</p>
+            </div>
+
+            <!-- Story 1 -->
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full p-0.5 story-gradient">
+                    <div class="bg-black w-full h-full rounded-full p-0.5">
+                        <img src="img/dave.jpg" alt="Story 1" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+                <p class="text-xs mt-1 truncate w-16 text-center">miss_dave_...</p>
+            </div>
+
+            <!-- Story 2 -->
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full p-0.5 story-gradient">
+                    <div class="bg-black w-full h-full rounded-full p-0.5">
+                        <img src="img/kunjal.jpg" alt="Story 2" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+                <p class="text-xs mt-1 truncate w-16 text-center">kunjalba_d...</p>
+            </div>
+
+            <!-- Story 3 -->
+            <div class="flex flex-col items-center">
+                <div class="w-16 h-16 rounded-full p-0.5 story-gradient">
+                    <div class="bg-black w-full h-full rounded-full p-0.5">
+                        <img src="img/dhruvi.jpg" alt="Story 3" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+                <p class="text-xs mt-1 truncate w-16 text-center">dhruvipatel...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post -->
+    <div class="border-t border-b border-gray-800 pb-2">
+        <!-- Post Header -->
+        <div class="flex justify-between items-center p-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center">
+                    <span class="text-black font-bold">V</span>
+                </div>
+                <div>
+                    <div class="flex items-center">
+                        <p class="font-semibold">viralbhayani</p>
+                        <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex items-center text-xs text-gray-400">
+                        <i class="fas fa-music mr-1"></i>
+                        <span>Pritam, Arijit Singh • Ashq Na Ho</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <!-- Post Image -->
+        <div class="relative">
+            <img src="img/post1.png" alt="Post Image" class="w-full">
+            <div class="absolute bottom-0 right-0 p-2">
+                <i class="fas fa-volume-mute text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Actions -->
+        <div class="flex justify-between items-center px-4 py-2">
+            <div class="flex items-center space-x-4">
+                <i class="far fa-heart text-2xl"></i>
+                <i class="far fa-comment text-2xl"></i>
+                <i class="far fa-paper-plane text-2xl"></i>
+            </div>
+            <div>
+                <i class="far fa-bookmark text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Stats -->
+        <div class="px-4">
+            <p class="font-bold">338K likes</p>
+            <div class="flex space-x-2 text-sm text-gray-400">
+                <span>9,942 comments</span>
+                <span>12.3K shares</span>
+            </div>
+        </div>
+    </div>
+    <!-- post 2 -->
+    <div class="border-t border-b border-gray-800 pb-2">
+        <!-- Post Header -->
+        <div class="flex justify-between items-center p-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center">
+                    <span class="text-black font-bold">V</span>
+                </div>
+                <div>
+                    <div class="flex items-center">
+                        <p class="font-semibold">prinsi</p>
+                        <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex items-center text-xs text-gray-400">
+                        <i class="fas fa-music mr-1"></i>
+                        <span>Pritam, Arijit Singh • Ashq Na Ho</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <!-- Post Image -->
+        <div class="relative">
+            <img src="img/post2.png" alt="Post Image" class="w-full">
+            <div class="absolute bottom-0 right-0 p-2">
+                <i class="fas fa-volume-mute text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Actions -->
+        <div class="flex justify-between items-center px-4 py-2">
+            <div class="flex items-center space-x-4">
+                <i class="far fa-heart text-2xl"></i>
+                <i class="far fa-comment text-2xl"></i>
+                <i class="far fa-paper-plane text-2xl"></i>
+            </div>
+            <div>
+                <i class="far fa-bookmark text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Stats -->
+        <div class="px-4">
+            <p class="font-bold">208K likes</p>
+            <div class="flex space-x-2 text-sm text-gray-400">
+                <span>1,942 comments</span>
+                <span>8.3K shares</span>
+            </div>
+        </div>
+    </div>
+    <!-- post 3 -->
+    <div class="border-t border-b border-gray-800 pb-2">
+        <!-- Post Header -->
+        <div class="flex justify-between items-center p-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center">
+                    <span class="text-black font-bold">V</span>
+                </div>
+                <div>
+                    <div class="flex items-center">
+                        <p class="font-semibold">prinsi_797</p>
+                        <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex items-center text-xs text-gray-400">
+                        <i class="fas fa-music mr-1"></i>
+                        <span>Pritam, Arijit Singh • Ashq Na Ho</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <!-- Post Image -->
+        <div class="relative">
+            <img src="img/post3.png" alt="Post Image" class="w-full">
+
+            <div class="absolute bottom-0 right-0 p-2">
+                <i class="fas fa-volume-mute text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Actions -->
+        <div class="flex justify-between items-center px-4 py-2">
+            <div class="flex items-center space-x-4">
+                <i class="far fa-heart text-2xl"></i>
+                <i class="far fa-comment text-2xl"></i>
+                <i class="far fa-paper-plane text-2xl"></i>
+            </div>
+            <div>
+                <i class="far fa-bookmark text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Stats -->
+        <div class="px-4">
+            <p class="font-bold">208K likes</p>
+            <div class="flex space-x-2 text-sm text-gray-400">
+                <span>1,942 comments</span>
+                <span>8.3K shares</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- post 4 -->
+    <div class="border-t border-b border-gray-800 pb-2">
+        <!-- Post Header -->
+        <div class="flex justify-between items-center p-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-full bg-yellow-500 flex items-center justify-center">
+                    <span class="text-black font-bold">V</span>
+                </div>
+                <div>
+                    <div class="flex items-center">
+                        <p class="font-semibold">Nayra_Sing</p>
+                        <svg class="w-4 h-4 text-blue-500 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <div class="flex items-center text-xs text-gray-400">
+                        <i class="fas fa-music mr-1"></i>
+                        <span>Pritam, Arijit Singh • Ashq Na Ho</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+
+        <!-- Post Image -->
+        <div class="relative">
+            <!-- <img src="img/post3.png" alt="Post Image" class="w-full"> -->
+            <video width="auto" height="240" controls>
+                <source src="video/post4.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute bottom-0 right-0 p-2">
+                <i class="fas fa-volume-mute text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Actions -->
+        <div class="flex justify-between items-center px-4 py-2">
+            <div class="flex items-center space-x-4">
+                <i class="far fa-heart text-2xl"></i>
+                <i class="far fa-comment text-2xl"></i>
+                <i class="far fa-paper-plane text-2xl"></i>
+            </div>
+            <div>
+                <i class="far fa-bookmark text-2xl"></i>
+            </div>
+        </div>
+
+        <!-- Post Stats -->
+        <div class="px-4">
+            <p class="font-bold">208K likes</p>
+            <div class="flex space-x-2 text-sm text-gray-400">
+                <span>1,942 comments</span>
+                <span>8.3K shares</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800">
+        <div class="flex justify-around items-center">
+            <button onclick="window.location.href='home.html'">
+                <i class="fas fa-home text-2xl"></i>
+            </button>
+            <button>
+                <i class="fas fa-search text-2xl"></i>
+            </button>
+            <button>
+                <div class="w-8 h-8 border-2 border-white rounded-lg flex items-center justify-center">
+                    <i class="fas fa-plus text-xl"></i>
+                </div>
+            </button>
+            <button onclick="window.location.href='reels.html'">
+                <i class="fab fa-youtube text-2xl"></i>
+            </button>
+            <button onclick="window.location.href='profile.html'">
+                <div class="w-6 h-6 rounded-full overflow-hidden">
+                    <img src="img/hardwear.jpg" alt="Profile" class="w-full h-full object-cover">
+                </div>
+            </button>
+        </div>
+        <div class="h-6 bg-black"></div> <!-- Safe area for iPhone -->
+    </nav>
+</body>
+
+</html>

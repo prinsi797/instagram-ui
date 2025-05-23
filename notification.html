@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../dist/output.css" rel="stylesheet">
+    <style>
+        .story-gradient {
+            background: linear-gradient(45deg, #FCAF45, #E1306C, #5851DB);
+        }
+
+        .notification-badge {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+    <!-- Mobile Header -->
+    <header class="flex justify-between items-center px-4 py-2 border-b border-gray-800">
+        <div class="flex items-center">
+            <a href="home.html">
+                <i class="fa-solid fa-arrow-left mr-5 mt-1"></i>
+            </a>
+            <div class="text-2xl font-semibold">Notifications</div>
+        </div>
+    </header>
+
+    <!-- Reels Section -->
+    <!-- Notifications Section -->
+    <main class="px-4 py-4 space-y-6">
+        <!-- Follow Requests -->
+        <div class="flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User" class="w-10 h-10 rounded-full">
+                <div>
+                    <p class="font-semibold">brij_esh001 + 504 others</p>
+                    <p class="text-sm text-gray-400">Follow requests</p>
+                </div>
+            </div>
+            <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
+        </div>
+
+        <!-- You're all caught up -->
+        <div class="flex items-center space-x-4">
+            <div class="w-6 h-6 rounded-full border-2 border-white flex items-center justify-center">
+                <i class="fas fa-check text-green-400 text-xs"></i>
+            </div>
+            <p class="text-sm text-gray-400">You're all caught up <a href="#" class="text-blue-400">See new activity</a>
+            </p>
+        </div>
+
+        <!-- Yesterday -->
+        <h2 class="text-lg font-semibold text-white">Yesterday</h2>
+
+        <div class="space-y-4">
+            <div class="flex items-start justify-between">
+                <div class="flex space-x-3">
+                    <img src="https://randomuser.me/api/portraits/men/11.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                        <p><span class="font-semibold">dishant.sardhara</span> and 10 others are on Threads. See what
+                            they're saying.</p>
+                        <p class="text-sm text-gray-400">18h</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-start justify-between">
+                <div class="flex space-x-3">
+                    <img src="https://randomuser.me/api/portraits/men/15.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                        <p><span class="font-semibold">digitalchauhan</span>, <span
+                                class="font-semibold">milesh_lathidadiya</span> and others liked your story.</p>
+                        <p class="text-sm text-gray-400">23h</p>
+                    </div>
+                </div>
+                <img src="https://randomuser.me/api/portraits/women/20.jpg" class="w-10 h-10 rounded-md" />
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-3">
+                    <img src="https://randomuser.me/api/portraits/men/25.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                        <p><span class="font-semibold">mahendra_dangar_05</span> requested to follow you.</p>
+                        <p class="text-sm text-gray-400">1d</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-lg text-sm">Confirm</button>
+            </div>
+        </div>
+
+        <!-- Last 7 Days -->
+        <h2 class="text-lg font-semibold text-white">Last 7 days</h2>
+
+        <div class="space-y-4">
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-3">
+                    <img src="https://randomuser.me/api/portraits/women/5.jpg" class="w-10 h-10 rounded-full" />
+                    <div>
+                        <p><span class="font-semibold">_radhepatel_</span> requested to follow you.</p>
+                        <p class="text-sm text-gray-400">1d</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-lg text-sm">Confirm</button>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <div class="flex space-x-3">
+                    <img src="https://randomuser.me/api/portraits/men/30.jpg"
+                        class="w-10 h-10 rounded-full border-2 border-pink-500" />
+                    <div>
+                        <p><span class="font-semibold">mojilo__baradi</span> requested to follow you.</p>
+                        <p class="text-sm text-gray-400">1d</p>
+                    </div>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-1 rounded-lg text-sm">Confirm</button>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 bg-black border-t border-gray-800">
+        <div class="flex justify-around items-center">
+            <button onclick="window.location.href='home.html'">
+                <i class="fas fa-home text-2xl"></i>
+            </button>
+            <button>
+                <i class="fas fa-search text-2xl"></i>
+            </button>
+            <button>
+                <div class="w-8 h-8 border-2 border-white rounded-lg flex items-center justify-center">
+                    <i class="fas fa-plus text-xl"></i>
+                </div>
+            </button>
+            <button onclick="window.location.href='reels.html'">
+                <i class="fab fa-youtube text-2xl"></i>
+            </button>
+            <button onclick="window.location.href='profile.html'">
+                <div class="w-6 h-6 rounded-full overflow-hidden">
+                    <img src="img/hardwear.jpg" alt="Profile" class="w-full h-full object-cover">
+                </div>
+            </button>
+        </div>
+        <div class="h-6 bg-black"></div> <!-- Safe area for iPhone -->
+    </nav>
+</body>
+
+</html>
